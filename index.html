@@ -9,13 +9,13 @@
 
 <body>
     <!-- header-page -->
-    <header class="header-page">
+    <header class="header-page"  id="home-section">
         <div class="home-icon"></div>
 
         <nav>
             <a href="#home-section">Home</a>
             <a href="#our-package-section">Our Package</a>
-            <a href="">Call Us</a>
+            <a href="#call-us-section">Call Us</a>
         </nav>
     </header>
     <hr/>
@@ -23,34 +23,141 @@
     <!-- main-page -->
     <main>
         <!-- header-content -->
-        <header class="header-content" id="home-section">
-            <h1>Your Trusted Travel Agent</h1>
-            <h3>Your Happiness is Our Happiness</h3>
+        <header class="header-content">
+            <h1 class="h1-home">Seoulmate Journey</h1>
+            <h3>Find your soulmate in every destination</h3>
         </header>
         
         <!-- home-content -->
         <section class="home-content">
             <!-- banner auto slide -->
-             <aside class="home-item">
+             <aside class="home-item-1">
                 <div class="banner-image"></div>
+                <p class="text-testimoni">"Beautiful destinations, excellent guides, and a trully magical experience"</p>
+
+                <div class="testimoni">
+                    <div class="profile-testimoni"></div>
+
+                    <div class="testimoni-identity">
+                        <p class="name-testimoni">Justin Seagull</p>
+                        <p class="job">Singer, 27</p>
+                    </div>
+                </div>
              </aside>
 
              <!-- form contact us -->
-              <form class="home-item"></form>
-        </section>
+             <form class="home-item-2">
+                <div class="form">
+                    <h3 align="center">Contact Us</h3>
+                    <p class="text-form">We will contact you within 1x24 hours after we received your data</p>
+            
+                    <div>
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="First and last name" required>
+                        <label for="email">Email Address</label>
+                        <input type="text" id="email" name="email" placeholder="example@gmail.com" required>
+                        <label for="interest">What Are You Interested in?</label>
+                        <div class="select-wrapper">
+                            <select id="interest" name="interest" required>
+                                <option value="" disabled selected hidden>Select option</option>
+                                <option value="3days">Solo package</option>
+                                <option value="5days">2-4 people package</option>
+                                <option value="7days">5-8 people package</option>
+                                <option value="14days">8+ people package</option>
+                            </select>
+                        </div>
+                        <button type="submit">SEND</button>
+                    </div>
+                </div>
+            </form>
+            
+            </section>
+
+        <div class="benefits">
+            <h2>Benefits:</h2>
+            <p class="title-text-benefit">Discover Hidden Gems</p>
+            <p class="expl-text-benefit">Explore secret spots and local gems beyond the usual tourist path.</p>
+            <p class="title-text-benefit">K-Drama Moments Come to Life</p>
+            <p class="expl-text-benefit">Visit iconic locations that make you feel like the star of your favorote K-Drama.</p>
+            <p class="title-text-benefit">Travel Made Effortless</p>
+            <p class="expl-text-benefit">From planning to execution, we ensure a smooth and stress-free journey.</p>
+        </div>
 
         <!-- our package content -->
          <section id="our-package-section">
             <header class="header-content our-package-header">
-                <h1>Our Package</h1>
+                <h1 class="h1-our-package">Our Package</h1>
             </header>
          </section>
-    </main>
+
+         <div class="our-package-container">
+            <div class="card card-1" data-card="1" onclick="toggleOverlay(this)">
+                <div class="overlay">
+                    <h2>Seoul</h2>
+                    <p>The dynamic capital city of South Korea, blending modernity with tradition.</p>
+                </div>
+            </div>
+            <div class="card card-2" data-card="2" onclick="toggleOverlay(this)">
+                <div class="overlay">
+                    <h2>Jeju-do</h2>
+                    <p>A tropical island with breathtaking scenery and UNESCO sites.</p>
+                </div>
+            </div>
+            <div class="card card-3" data-card="3" onclick="toggleOverlay(this)">
+                <div class="overlay">
+                    <h2>Busan</h2>
+                    <p>A vibrant port city combining coastal beauty and urban charm.</p>
+                </div>
+            </div>
+            <div class="card card-4" data-card="4" onclick="toggleOverlay(this)">
+                <div class="overlay">
+                    <h2>Daegu</h2>
+                    <p>Known as the "City of Energy," Daegu offers rich history, modern attractions, and natural beauty</p>
+                </div>
+            </div>
+            <div class="card card-5" data-card="5" onclick="toggleOverlay(this)">
+                <div class="overlay">
+                    <h2>Gyeonggi-do</h2>
+                    <p>A mix of natural beauty and modern attractions near Seoul.</p>
+                </div>
+            </div>
+            <div class="card card-6" data-card="6" onclick="toggleOverlay(this)">
+                <div class="overlay">
+                    <h2>Gangwon-do</h2>
+                    <p>Discover even more incredible destinations with our travel packages.</p>
+                </div>
+            </div>
+        </div>
     
+        <script src="js/script.js"></script>
+    </main>
+
+        <!-- call us content -->
+        <section id="call-us-section" class="call-us-section">
+            <header class="header-content call-us-header">
+                <h1 class="call-us-h1">Let's Explore South Korea and Paint Beautiful Memories with Seoulmate Journey!</h1>
+                <p class="call-us-text">Dive into the beauty of South Korea with Seoulmate Journey. From vibrant cityscapes to serene countryside escapes, we create tailored travel experiences that turn your Korean adventure into cherished memories. Book your journey now!</p>
+            </header>
+            <button type="submit">CALL TO ACTION</button>
+         </section>
+
+    <hr/>
+
     <!-- footer-content -->
-    <footer>
-        <span>Created by @vrnnouvell</span>
+    <footer class="footer">
+        <div class="footer-content">
+            <span class="logo">Seoulmate Journey</span>
+            <div class="footer-text">
+                <span>Terms of Service</span>
+                <span>Privacy Policy</span>
+            </div>
+            <p class="copyright">&copy; 2019 Seoulmate Journey</p>
+        </div>
     </footer>
+    
+    <script src="js/script2.js"></script>
+    <script src="js/script3.js"></script>
+
 </body>
 
 </html>

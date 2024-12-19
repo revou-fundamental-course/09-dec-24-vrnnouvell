@@ -1,20 +1,25 @@
 .header-page{
     display: flex;
     justify-content: space-between;
+    background-color: #0c666e;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .home-icon{
     height: 50px;
     width: 50px;
-    background-image: url(https://picsum.photos/200);
+    background-image: url(../assets/icon.jpg);
     background-size: cover;
     background-position: center;
     border-radius: 50px;
+    margin-left: 24px;
 }
 
 nav{
     display: flex;
-    align-items: center
+    align-items: center;
+    margin-right: 24px;
 }
 
 nav>a{
@@ -26,6 +31,7 @@ nav>a{
     padding-right: 16px;
     text-decoration: none;
     color: black;
+    background-color: #b9d6d4;
 }
 
 hr{
@@ -36,33 +42,321 @@ hr{
     text-align: center;
 }
 
-.banner-image{
+.h1-home{
+    font-size: 1cm;
+}
+
+
+.banner-image {
     height: 320px;
-    background-image: url(https://picsum.photos/200);
+    background-image: url('https://images.pexels.com/photos/28607741/pexels-photo-28607741.jpeg'),
+    url('https://i.pinimg.com/736x/88/a0/21/88a021468056292b9838f10def7754ea.jpg'),
+    url('https:/s.pexels.com/photos/13022471/pexels-photo-13022471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+    url('https://images.pexels.com/photos/2246789/pexels-photo-2246789.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
+    url('https://blue.kumparan.com/image/upload/fl_progressive,fl_lossy,c_fill,q_auto:best,w_1024/v1550463699/byjhjy2fzrhl5tyzhj9e.jpg');
     background-size: cover;
     background-position: center;
+    transition: background-image 1s ease-in-out;
 }
 
+
+.text-testimoni{
+    font-size: 13px;
+    font-style: italic;
+    margin-left: 10px;
+    margin-top: 24px;
+}
+
+.testimoni{
+    display: flex;
+    align-items: center;
+}
+
+.profile-testimoni{
+    height: 50px;
+    width: 50px;
+    background-image: url(../assets/profile-testimoni.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+
+}
+
+.testimoni-identity{
+    display: flex;
+    margin-left: 15px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.name-testimoni{
+    margin-block-end: 0;
+    margin-block-start: 0;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.job{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    font-size: 12px;
+    font-style: italic
+}
+
+/* iniiiii */
 .home-content{
     display: flex;
-    gap: 24px;
+    gap: 24px;      
 }
 
-.home-item{
+.home-item-1{
     flex: 1;
+    margin-left: 24px;
+}
+
+.home-item-2{
+    flex: 1;
+    margin-right: 24px;
 }
 
 form{
-    background-color: aliceblue;
+    background-color: #75b2b7;
+}
+
+.form{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.text-form{
+    font-size: 13px;
+}
+
+label{
+    display: block;
+    font-weight: bold;
+    margin-top: 15px;
+    color: #333333;
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333333;
+    box-sizing: border-box;
+}
+
+input::placeholder{
+    color: #aaaaaa;
+}
+
+select{
+    color: #aaaaaa;
+}
+
+select option{
+    color: #333333;
+}
+
+select:valid{
+    color: #333333;
+}
+
+.select-wrapper{
+    position: relative;
+}
+
+button{
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+button:hover{
+    background-color: #555555;
+}
+
+.benefits{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title-text-benefit{
+    margin-block-end: 0;
+    font-weight: bold;
+}
+
+.expl-text-benefit{
+    margin-block-start: 0;
+    font-style: italic;
 }
 
 .our-package-header{
-    background-color: aliceblue;
+    background-color: #75b2b7;
     margin-top: 24px;
     padding-top: 64px;
     padding-bottom: 64px;
+    margin-left: 24px;
+    margin-right: 24px;
 }
 
-footer{
+.h1-our-package{
+    font-size: 1,7cm;
+}
+
+.our-package-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+}
+
+.card {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    filter: brightness(0.7);
+    transition: filter 0.3s ease;
+}
+
+.card:hover {
+    filter: brightness(0.9);
+}
+
+.card.active {
+    filter: brightness(1);
+}
+
+.card-1 {
+    background-image: url('../assets/seoul.jpg'); 
+}
+
+.card-2 {
+    background-image: url('https://www.wendywutours.com/resource/upload/1190/banner-jeju-island-2x.jpg'); 
+}
+
+.card-3 {
+    background-image: url('https://as1.ftcdn.net/v2/jpg/03/06/12/08/1000_F_306120806_4uJeT5LYTIX23mQpQkniQlgqQBWP6iY0.jpg'); 
+}
+
+.card-4 {
+    background-image: url('https://www.pelago.com/img/products/KR-South%20Korea/daegu-city-bus-tour-ticket-south-korea/e6acbc0f-b8c0-4aa6-8256-914495af51b0_daegu-city-bus-tour-ticket-south-korea-xlarge.webp'); 
+}
+.card-5 {
+    background-image: url('https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit1440960gsm/events/2023/12/12/ea35219b-0647-4a4b-8e64-ad6b8922e8d2-1702377853599-c7e79098e985d8bc6a35ada50863e2fc.png'); 
+}
+
+.card-6 {
+    background-image: url('https://s-light.tiket.photos/t/01E25EBZS3W0FY9GTG6C42E1SE/rsfit1440960gsm/events/2023/12/12/8ab9c8d1-4592-47da-b892-aca669af73a1-1702376468784-22bcd671216087bfb186d7064fa439da.png'); 
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    transition: opacity 0.3s ease;
+}
+
+.overlay.hidden {
+    display: none;
+}
+
+.overlay h2 {
+    margin: 0;
+    font-size: 24px;
+}
+
+.overlay p {
+    margin: 10px 0 0;
+    font-size: 14px;
+}
+
+.call-us-section{
+    margin-bottom: 100px;
+}
+
+
+.call-us-header{
     margin-top: 24px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.call-us-h1{
+    margin-left: 24px;
+    margin-right: 24px;
+}
+
+.call-us-text{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+
+.footer {
+    text-align: center;
+    padding: 20px 10px;
+    border-top: 1px solid #ddd;
+    background-color: #0c666e;
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: 'Cursive', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.footer-text {
+    margin-bottom: 10px;
+}
+
+.footer-text span {
+    color: #ffffff;
+    font-size: 14px;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+.copyright {
+    color: #ffffffff;
+    font-size: 12px;
+
 }
